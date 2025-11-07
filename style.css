@@ -1,0 +1,41 @@
+    body {
+      padding-top: 25px;
+    }
+
+     .navig_listing {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+        position: fixed;
+        top: 0;
+      }
+      
+      .navig_listing .navig_item .navig_link {
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align:center;
+      }
+
+      .navig_listing .navig_item .navig_link:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .navig_listing .navig_item .navig_link.active {
+        background-color: #04AA6D;
+      }
+      .navig_link {
+        padding: 10px 10px;
+      }
+
+    /* Add a lightgray right border to all list items, except the last */
+    .navig_listing .navig_item {
+      float: left;
+      border-right: 1px solid #bbbbbb;
+    }
+
+    .navig_listing .navig_item:last-child {
+      border-right: none;
+    }

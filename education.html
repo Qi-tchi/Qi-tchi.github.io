@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  <title>Qi QIU</title>
+</head>
+<navigation>
+    <ul class="navig_listing">
+          <li class="navig_item"> 
+              <a class="navig_link" href="index.html">
+                Home
+              </a>
+          </li>
+          
+          <li class="navig_item">
+            <a class="navig_link"  href="education.html">
+              Education
+            </a>
+          </li>
+
+          <li class="navig_item"> 
+            <a class="navig_link" href="publications.html">
+              Publications
+            </a>
+          </li>
+          <li class="navig_item"> 
+            <a class="navig_link" href="teaching.html">
+              Teaching
+            </a>
+          </li>
+
+            <li class="navig_item"> 
+            <a class="navig_link" href="work_experiences.html">
+              Work-experience
+            </a>
+          </li>
+    </ul>
+  </navigation>
+
+<body> 
+      <!-- <h2>Education</h2> -->
+      <ul>
+        <li>
+          <div style="display: flex">
+            <div>
+              Ph.D. Candidate in Computer Science, 
+            </div> 
+            <div>
+              <a href="https://fr.wikipedia.org/wiki/Universit%C3%A9_Claude-Bernard-Lyon-I">
+                Claude Bernard University Lyon 1
+              </a>,
+            </div>
+          </div>
+          <div>
+            on Automated Proofs of Termination of Graph Rewriting Systems,
+          </div>
+          <div>
+            Advisor: Xavier URBAIN.
+          </div>
+        </li>
+        <li>
+          <div style="display:flex">
+            <div>
+              MSc in Computer Science,
+            </div>
+            <div>
+              <a href="https://en.wikipedia.org/wiki/Sorbonne_University">Sorbonne University</a>, 
+            </div>
+            <div>
+              September 2020.
+            </div>
+          </div>
+        </li>
+        <li>
+          <div style="display:flex">
+              <div>
+                B.Math in Pure Mathematics, 
+              </div>
+              <div>
+                <a href="https://en.wikipedia.org/wiki/Paris_Diderot_University">Paris Diderot University</a>,  
+              </div>
+              <div>
+                June 2017.
+              </div>
+          </div>
+        </li>
+      </ul>
+</body> 
+<script>
+        // Highlight active nav link based on current filename
+    (function(){
+      const links = document.querySelectorAll('.navig_link');
+      const currentFile = location.pathname.split('/').pop() || 'index.html';
+      links.forEach(l => {
+        const href = l.getAttribute('href');
+        if (href === currentFile) l.classList.add('active');
+      });
+    })();
+  </script>
+</script>
+</html>
