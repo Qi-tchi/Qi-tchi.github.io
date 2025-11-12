@@ -4,49 +4,68 @@
     }
     
     body {
-      padding-top: 40px;
+      padding-top: 48px;
     }
 
-     .navig_listing {
+
+      .navig_listing {
+        /* display: flex;
+        color: white;
+        text-decoration: none;
+        text-align:center;
+        border-right: 1px solid #bbbbbb;
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #333333;
         position: fixed;
-        top: 0;
+        top: 0; */
+          position: fixed;
+          top: 0;
+          left: 0;           /* 保证贴左边 */
+          width: 100%;       /* 占满视口宽度（基于父容器） */
+          display: flex;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          background-color: #333333;
+          z-index: 1000;
       }
 
-      .navig_listing .navig_item .navig_link {
-        display: block;
-        color: white;
-        text-decoration: none;
-        text-align:center;
-      }
-
-      .navig_listing .navig_item .navig_link:hover:not(.active) {
-        background-color: #111;
-      }
-
-      .navig_listing .navig_item .navig_link.active {
-        background-color: #01796F;
-      }
-      .navig_link {
-        padding: 10px 10px;
-      }
-
-    /* Add a lightgray right border to all list items, except the last */
-    .navig_listing .navig_item {
-      float: left;
+    .navig_item {
       border-right: 1px solid #bbbbbb;
+      text-align: center;   
+      background-color: #111;
+      color: white;
+      text-decoration: none;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width: calc(100vw / 7);
     }
 
-    .navig_listing .navig_item:last-child {
+     .navig_item:last-child {
       border-right: none;
     }
 
-    .navig_item {
-       width: 180px;
-    text-align: center;      /* 让文字居中，可选 */
-    box-sizing: border-box;  /* padding/边框计入宽度 */
+    .navig_link {
+        padding: 10px 10px;
+        color: white;
+        text-decoration: none;
+        text-align:center;
+
+        width:100%; 
+        height:100%; 
+        box-sizing:border-box;
+      }
+
+    .navig_link:hover:not(.active) {
+      background-color: #111;
+    }
+
+    
+      .navig_link.active {
+      background-color: #01796F;
     }
