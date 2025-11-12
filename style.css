@@ -4,7 +4,7 @@
     }
     
     :root {
-      font-size: 20px; /* 原来是 16px，改成 18px 全站放大 (~12.5%) */
+      font-size: 24px; /* 原来是 16px，改成 18px 全站放大 (~12.5%) */
     }
 
     body {
