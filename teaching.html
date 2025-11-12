@@ -5,214 +5,267 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
   <title>Qi QIU</title>
+  <style>
+  .teaching-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .teaching-table th,
+    .teaching-table td {
+      border: 1px solid #ddd;
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+
+    .teaching-table thead th {
+      background: #f7f7f9;
+      position: sticky; /* optional */
+      top: 0;
+      z-index: 1;
+    }
+  </style>
 </head>
- <navigation>
-    <ul class="navig_listing">
-          <li class="navig_item"> 
-              <a class="navig_link" href="index.html">
-                Home
-              </a>
-          </li>
-          
-          <li class="navig_item">
-            <a class="navig_link"  href="education.html">
-              Education
-            </a>
-          </li>
-
-          <li class="navig_item"> 
-            <a class="navig_link" href="publications.html">
-              Publications
-            </a>
-          </li>
-          <li class="navig_item"> 
-            <a class="navig_link" href="teaching.html">
-              Teaching
-            </a>
-          </li>
-
-                    <li class="navig_item"> 
-            <a class="navig_link" href="work_experiences.html">
-              Work-experience
-            </a>
-          </li>
-                  <li class="navig_item"> 
-            <a class="navig_link" href="contact.html">
-              Contact
-            </a>
-          </li>
-                            <li class="navig_item"> 
-            <a class="navig_link" href="miscellaneous.html">
-              Miscellaneous
-            </a>
-          </li>
-    </ul>
-  </navigation>
-
 <body> 
-      <!-- <h2>Teaching Experiences</h2> -->
-      <p><small>TD = tutorial/exercise session; TP = practical/lab session.</small></p>
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Course</th>
-            <th>Level</th>
-            <th>Format</th>
-            <th>Hours</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2021-2022</td>
-            <td>Algorithmics and Recursive Programming</td>
-            <td>Year 1 (Bachelor)</td>
-            <td>TP</td>
-            <td>15 h</td>
-          </tr>
-          <tr>
-            <td>2021–2022</td>
-            <td>Computer Architecture and Systems</td>
-            <td>Year 2 (Bachelor)</td>
-            <td>TP</td>
-            <td>19 h</td>
-          </tr>
-          <tr>
-            <td>2021–2022</td>
-            <td>Databases and Web Programming</td>
-            <td>Year 2 (Bachelor)</td>
-            <td>TP</td>
-            <td>22 h</td>
-          </tr>
-          <tr>
-            <td>2021–2022</td>
-            <td>Classical Logic</td>
-            <td>Year 3 (Bachelor)</td>
-            <td>TP</td>
-            <td>4 h</td>
-          </tr>
-          <tr>
-            <td>2021–2022</td>
-            <td>Formal Language Theory</td>
-            <td>Year 3 (Bachelor)</td>
-            <td>TP</td>
-            <td>3 h</td>
-          </tr>
-          <tr>
-            <td>2022–2023</td>
-            <td>Classical Logic</td>
-            <td>Year 3 (Bachelor)</td>
-            <td>TD</td>
-            <td>4.5 h</td>
-          </tr>
-          <tr>
-            <td>2022–2023</td>
-            <td>Formal Language Theory</td>
-            <td>Year 3 (Bachelor)</td>
-            <td>TD</td>
-            <td>4.5 h</td>
-          </tr>
-          <tr>
-            <td>2022–2023</td>
-            <td>Formal Language Theory</td>
-            <td>Year 3 (Bachelor)</td>
-            <td>TP</td>
-            <td>6 h</td>
-          </tr>
-          <tr>
-            <td>2022–2023</td>
-            <td>Computer Architecture</td>
-            <td>Year 2 (Bachelor)</td>
-            <td>TD/TP</td>
-            <td>18 h / 24 h</td>
-          </tr>
-          <tr>
-            <td>2023–2024</td>
-            <td>Computer Architecture</td>
-            <td>Year 2 (Bachelor)</td>
-            <td>TP</td>
-            <td>24 h</td>
-          </tr>
-          <tr>
-            <td>2023–2024</td>
-            <td>Compilation</td>
-            <td>Year 1 (Master)</td>
-            <td>TP</td>
-            <td>15 h</td>
-          </tr>
-          <tr>
-            <td>2024–2025</td>
-            <td>Imperative Programming and Algorithmics</td>
-            <td>Year 2 (Bachelor)</td>
-            <td>TD/TP</td>
-            <td>34.5 h / 33 h</td>
-          </tr>
-          <tr>
-            <td>2024–2025</td>
-            <td>Automata and Formal Languages</td>
-            <td>Year 2 (Bachelor)</td>
-            <td>TD</td>
-            <td>58 h</td>
-          </tr>
-          <tr>
-            <td>2024-2025</td>
-            <td>Functional Programming and Algorithmics</td>
-            <td>Year 1 (Bachelor)</td>
-            <td>TD/TP</td>
-            <td>36 h / 36 h</td>
-          </tr>
-           <tr>
+    <navigation>
+      <ul class="navig_listing">
+            <li class="navig_item"> 
+                <a class="navig_link" href="index.html">
+                  Home
+                </a>
+            </li>
+            
+            <li class="navig_item">
+              <a class="navig_link"  href="education.html">
+                Education
+              </a>
+            </li>
+
+            <li class="navig_item"> 
+              <a class="navig_link" href="publications.html">
+                Publications
+              </a>
+            </li>
+
+            <li class="navig_item"> 
+              <a class="navig_link" href="teaching.html">
+                Teaching
+              </a>
+            </li>
+
+            <li class="navig_item"> 
+              <a class="navig_link" href="work_experiences.html">
+                Work-experience
+              </a>
+            </li>
+
+            <li class="navig_item"> 
+              <a class="navig_link" href="contact.html">
+                Contact
+              </a>
+            </li>
+          
+            <li class="navig_item"> 
+              <a class="navig_link" href="miscellaneous.html">
+                Miscellaneous
+              </a>
+            </li>
+      </ul>
+    </navigation>
+
+    <!-- <h2>Teaching Experiences</h2> -->
+    <p>
+<p>
+  <small>
+    TD = tutorial/exercise session; TP = practical/lab session; 
+    <abbr title="Bachelor (Licence) Year 1">L1</abbr> = Year 1 (Bachelor); 
+    <abbr title="Bachelor (Licence) Year 2">L2</abbr> = Year 2 (Bachelor); 
+    <abbr title="Bachelor (Licence) Year 3">L3</abbr> = Year 3 (Bachelor); 
+    <abbr title="Master Year 1">M1</abbr> = Year 1 (Master); 
+  </small>
+    </p>
+
+    <table class="teaching-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Course</th>
+          <th>Level/Year</th>
+          <th>Format</th>
+          <th>Hours</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>2021-2022</td>
+          <td>Algorithmics and Recursive Programming</td>
+          <td>L1</td>
+          <td>TP</td>
+          <td>15 h</td>
+        </tr>
+
+        <tr>
+          <td>2021-2022</td>
+          <td>Computer Architecture and Systems</td>
+          <td>L2</td>
+          <td>TP</td>
+          <td>19 h</td>
+        </tr>
+
+        <tr>
+          <td>2021-2022</td>
+          <td>Databases and Web Programming</td>
+          <td>L2</td>
+          <td>TP</td>
+          <td>22 h</td>
+        </tr>
+
+        <tr>
+          <td>2021-2022</td>
+          <td>Classical Logic</td>
+          <td>L3</td>
+          <td>TP</td>
+          <td>4 h</td>
+        </tr>
+
+        <tr>
+          <td>2021-2022</td>
+          <td>Formal Language Theory</td>
+          <td>L3</td>
+          <td>TP</td>
+          <td>3 h</td>
+        </tr>
+
+        <tr>
+          <td>2022-2023</td>
+          <td>Classical Logic</td>
+          <td>L3</td>
+          <td>TD</td>
+          <td>4.5 h</td>
+        </tr>
+
+        <tr>
+          <td>2022-2023</td>
+          <td>Formal Language Theory</td>
+          <td>L3</td>
+          <td>TD</td>
+          <td>4.5 h</td>
+        </tr>
+
+        <tr>
+          <td>2022-2023</td>
+          <td>Formal Language Theory</td>
+          <td>L3</td>
+          <td>TP</td>
+          <td>6 h</td>
+        </tr>
+
+        <tr>
+          <td>2022-2023</td>
+          <td>Computer Architecture</td>
+          <td>L2</td>
+          <td>TD/TP</td>
+          <td>18 h / 24 h</td>
+        </tr>
+
+        <tr>
+          <td>2023-2024</td>
+          <td>Computer Architecture</td>
+          <td>L2</td>
+          <td>TP</td>
+          <td>24 h</td>
+        </tr>
+
+        <tr>
+          <td>2023-2024</td>
+          <td>Compilation</td>
+          <td>M1</td>
+          <td>TP</td>
+          <td>15 h</td>
+        </tr>
+
+        <tr>
+          <td>2024-2025</td>
+          <td>Imperative Programming and Algorithmics</td>
+          <td>L2</td>
+          <td>TD/TP</td>
+          <td>34.5 h / 33 h</td>
+        </tr>
+
+        <tr>
+          <td>2024-2025</td>
+          <td>Automata and Formal Languages</td>
+          <td>L2</td>
+          <td>TD</td>
+          <td>58 h</td>
+        </tr>
+
+        <tr>
+          <td>2024-2025</td>
+          <td>Functional Programming and Algorithmics</td>
+          <td>L1</td>
+          <td>TD/TP</td>
+          <td>36 h / 36 h</td>
+        </tr>
+
         <tr>
           <td>2025-2026</td>
           <td>Introduction to Object-Oriented Programming</td>
-          <td>Year 1 (Bachelor)</td>
+          <td>L1</td>
           <td>TD</td>
           <td>20 h</td>
         </tr>
+
         <tr>
           <td>2025-2026</td>
           <td>Introduction to Databases</td>
-          <td>Year 1 (Bachelor)</td>
+          <td>L1</td>
           <td>TD</td>
           <td>24 h</td>
         </tr>
+
         <tr>
           <td>2025-2026</td>
           <td>Computer Architecture</td>
-          <td>Year 1 (Bachelor)</td>
+          <td>L1</td>
           <td>TD</td>
           <td>15 h</td>
         </tr>
+
         <tr>
           <td>2025-2026</td>
           <td>Advanced Object-Oriented Programming</td>
-          <td>Year 2 (Bachelor)</td>
+          <td>L2</td>
           <td>TD</td>
           <td>40 h</td>
         </tr>
+
         <tr>
           <td>2025-2026</td>
           <td>Advanced Web Technologies</td>
-          <td>Year 2 (Bachelor)</td>
+          <td>L2</td>
           <td>TD</td>
           <td>24 h</td>
         </tr>
+
         <tr>
           <td>2025-2026</td>
           <td>Python Programming</td>
-          <td>Year 2 (Bachelor)</td>
+          <td>L2</td>
           <td>TD</td>
           <td>15 h</td>
         </tr>
+
         <tr>
           <td>2025-2026</td>
           <td>Web Programming</td>
-          <td>Year 3 (Bachelor)</td>
+          <td>L3</td>
           <td>TD</td>
           <td>28 h</td>
         </tr>
-        </tbody>
-      </table>
+      </tbody>
+  </table>
 </body>
 
   <script src="highlight.js"></script>
