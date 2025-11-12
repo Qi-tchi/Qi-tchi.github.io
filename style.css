@@ -1,3 +1,8 @@
+    html {
+      font-family:
+        Times, "Times New Roman", Arial, sans-serif;  
+    }
+    
     body {
       padding-top: 40px;
     }
@@ -11,7 +16,7 @@
         position: fixed;
         top: 0;
       }
-      
+
       .navig_listing .navig_item .navig_link {
         display: block;
         color: white;
@@ -38,4 +43,10 @@
 
     .navig_listing .navig_item:last-child {
       border-right: none;
+    }
+
+    .navig_item {
+       width: 180px;
+    text-align: center;      /* 让文字居中，可选 */
+    box-sizing: border-box;  /* padding/边框计入宽度 */
     }
